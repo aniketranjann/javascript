@@ -35,3 +35,21 @@ console.log(obj3);
 
 // console.log(tinderUser.hasOwnProperty('isLoggedIn'));
 // does the object has isLoggedIn key/property
+
+// destructure
+const course = {
+    coursename:"javascript",
+    price:"999",
+    courseInstructor:"Aniket"
+}
+
+// course.courseInstructor
+const {courseInstructor:instructor}=course
+// console.log(courseInstructor);
+console.log(instructor);
+
+
+// const navbar=({company}) =>{
+
+// }
+// navbar(company="Aniket")
