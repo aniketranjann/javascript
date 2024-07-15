@@ -1,32 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>DOM learning</title>
-    <style>
-        .bg-black
-        {
-            background-color: black;
-            color: white;
-        }
-    </style>
-</head>
-<body class="bg-black">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Events</title>
+  </head>
+  <body style="background-color: #414141; color: aliceblue;">
+    <h2>Amazing images</h2>
     <div>
-        <h1 id= "title" class = "heading">DOM learning in JAVASCRIPT on Youtube 
-            <span style="display: none;">test text</span></h1>
-            <h2>Lorem ipsum dolor sit.</h2>
-            <h2>Lorem ipsum dolor sit amet..</h2>
-            <h2>Lorem ipsum dolor sit, amet consectetur adipisicing.</h2>
-        <p>Lorem ipsum dolor sit amet.</p>
-        <input type="password" name="" id="">
-
-        <ul>
-            <li class = "list-item">one</li>
-            <li class = "list-item">two</li>
-            <li class = "list-item">three</li>
-            <li class = "list-item">four</li>
-        </ul>
+      <ul id="images">
+        <li>
+          <img
+            width="200px"
+            id="photoshop"
+            src="https://images.pexels.com/photos/2244330/pexels-photo-2244330.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt="photoshop"
+          />
+        </li>
+        <li>
+          <img
+            width="200px"
+            id="japan"
+            src="https://images.pexels.com/photos/402028/pexels-photo-402028.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt=""
+          />
+        </li>
+        <li>
+          <img
+            width="200px"
+            id="river"
+            src="https://images.pexels.com/photos/1179225/pexels-photo-1179225.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt=""
+          />
+        </li>
+        <li>
+          <img
+            width="200px"
+            id="owl"
+            src="https://images.pexels.com/photos/86596/owl-bird-eyes-eagle-owl-86596.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt=""
+          />
+        </li>
+        <li>
+          <img
+            width="200px"
+            id="prayer"
+            src="https://images.pexels.com/photos/1615776/pexels-photo-1615776.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt=""
+          />
+        </li>
+        <li><a style="color: aliceblue;" href="https://www.google.com/" id="google">Google</a></li>
+      </ul>
     </div>
-</body>
+  </body>
+  <script>
+    // document.getElementById('owl').onclick = function()
+    // {
+    //     alert("Owl Clicked")
+    // }
+
+    // document.getElementById('owl').addEventListener('click',function(){
+    //     alert('Owl clicked again')
+    // },false)
+
+    // document.getElementById('owl').addEventListener('click',function(e){
+    //     console.log(e);
+    // },false)
+
+    // type, timestamp,defaultPrevented
+    //target, toElement, srcElement, currentTarget
+    //clientX, ClientY, screenX, ScreenY
+    //altkey, ctrlkey, keyCode, shiftKey
+    
+
+    // attachEvent()
+    //jQuery - on event listner
+
+    // event Object
+    // document.getElementById('images').addEventListener('click',function(e){
+    //     console.log("click inside the ul");
+    // },false)
+
+    // document.getElementById('owl').addEventListener('click',function(e){
+    //     console.log("Owl clicked");
+    //     e.stopPropagation()
+    // },false)
+
+    // document.getElementById('google').addEventListener('click',function (e) {
+    //     console.log("google clicked")
+    //     e.preventDefault()
+    // },false)
+
+
+    // disappear the image by clicking on it 
+    document.querySelector('#images').addEventListener('click',function(e){
+        // console.log(e.target.parentNode);
+        console.log(e.target.tagName);
+        if(e.target.tagName === 'IMG')
+        {
+            console.log(e.target.id);
+            let removeIt = e.target.parentNode
+            removeIt.remove()
+        }
+        // let removeIt = e.target.parentNode
+        // removeIt.remove()
+        // removeIt.parentNode.removeChild(removeIt)
+    },false)
+
+  </script>
 </html>
