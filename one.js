@@ -1,47 +1,47 @@
-// if
-// const temperature = 41
-// if (temperature === 41) {
-//     console.log("Less than 50");
-
-// }
-// else{
-//     console.log("temperature is greter than 50");
-// }
-
-// console.log("execute");
-
-// const score = 200
-// if(score > 100 )
-// {
-//     const power = "fly"
-//     console.log(`user power: ${power}`);
-// }
-// //console.log(`user power: ${power}`);
-
-const balance = 1000;
-// if(balance > 500) console.log("test");
-
-//************Nesting************/
-// if (balance < 500) {
-//   console.log("less than 500");
-// } else if (balance < 700) {
-//   console.log("less than 750");
-// } else if (balance < 900) {
-//   console.log("Balance less than 900");
-// } else {
-//   console.log("Less than 1200");
+// for (let index = 0; index < 10; index++) {
+//     const element = index;
+//     if (element == 5) {
+//         console.log("5 is best number");
+        
+//     }
+//     console.log(element);
+    
 // }
 
-const userLoggedIn = true;
-const debitCard = true;
-const loggedInFromGoogle = false;
-const loggedInFromEmail = true;
+// for (let i= 1; i <= 10; i++) {
+//     console.log(`outer loop value : ${i}`);
+//     for (let j = 1; j <=10 ; j++) {
+//         // console.log(`inner loop value ${j} and inner loop ${i}`);
+//         console.log(i + '*' + j + ' = ' + i*j);
+//     }
+    
+// }
 
-if (userLoggedIn && debitCard) {
-  console.log("Allowed to buy course");
-}
+// let myArray = ["flash","batman","superman"]
+// console.log(myArray.length);
+// for (let index = 0; index < myArray.length; index++) {
+//     const element = myArray[index];
+//     console.log(element);
+    
+// }
 
-if (loggedInFromEmail || loggedInFromGoogle) {
-  console.log("You are logged in");
+// break and continue 
+// for (let index = 1; index <= 20; index++) {
+//     if (index == 5) {
+//         console.log(`detected 5`);
+//         break;
+        
+//     }
+//     console.log(`value of i is : ${index}`);
+    
+// }
+for (let index = 1; index <= 20; index++) {
+    if (index == 5) {
+        console.log(`detected 5`);
+        continue;
+        
+    }
+    console.log(`value of i is : ${index}`);
+    
 }
 
