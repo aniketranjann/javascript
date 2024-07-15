@@ -1,38 +1,39 @@
 const name = "Aniket"
 const repoCount = 50
+// console.log(name + repoCount + "anything");
+// string interpolation using backticks
+// we create place holders and directly injects vaiables there 
+console.log(`Hello my name is ${name} and my repo count is ${repoCount}`);
 
-//console.log(name + repoCount + "Value");
-// string interpolation using bactics
-console.log(`hello my name is ${name} and my repo count is ${repoCount}`);
+//another way of declaration
 
-// another method of declaring a string 
-const getName = new String ("AniketRanjan")
-console.log(getName[0]);// it is showing key value pair 
-// strig is not array here , rather is an object 
-console.log(getName.__proto__);
-console.log(getName.length);
-console.log(getName.toUpperCase());// doesn't change the original Value of string
-console.log(getName.charAt(2));
-console.log(getName.indexOf('R'));// case sensitive 
+const gameName = new String('Ranjan-fc-com')
+console.log(gameName);
+console.log(gameName[0]);
+console.log(gameName.__proto__);
 
-// more methods 
-const getName1 = new String("aniket-ranjan");
-const newString = getName1.substring(0,4);
-console.log(newString);
+console.log(gameName.length);
+console.log(gameName.toUpperCase()); // it doesn't changed the original string
+console.log(gameName.charAt(2));
+console.log(gameName.indexOf('a')); // first occurence of the char.
 
-const anotherString = getName1.slice(-12,4);
+const substr = gameName.substring(0,3) // excluding the char at last 
+console.log(substr);
+
+const anotherString = gameName.slice(-6,3)
 console.log(anotherString);
 
-
-const newStringOne = "   aniket    ";
+const newStringOne = "    Aniket.   "
 console.log(newStringOne);
-console.log(newStringOne.trim());
+console.log(newStringOne.trim()); // remove spaces from start and end.
+// works on spaces and line terminators
 
-const url = "https://aniket.com/aniket%20ranjan";
-console.log(url.replace('%20','-'));
-
+const url = "https://aniket.com/aniket%20ranjan"
+// url.replace('%20','-')
+console.log(url.replace('%20', '-'));
 console.log(url.includes('aniket'));
 
-// conevrsion of string into array based on dash , space or anyting.
+// convert string into array , split based on - / spaces
+console.log(gameName.split('-')); 
 
-console.log(getName1.split('-'));
+

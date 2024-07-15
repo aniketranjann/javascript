@@ -1,57 +1,54 @@
-let score = "33abc"
+// let score = 33
+// console.log(typeof score); // number
+// let score = "33"
+//  let score = "33abc"
+// console.log(typeof score); // string 
 
-// console.log(typeof score);
+// let valueInNumber = Number(score)
+// console.log(typeof valueInNumber);//number
+// console.log(valueInNumber);//NaN
 
-let valueinNumber = Number(score)
+// let score = null
+// console.log(typeof score); // object
 
-// console.log(typeof valueinNumber);
-// console.log(valueinNumber)
+// let valueInNumber = Number(score)
+// console.log(typeof valueInNumber);//number
+// console.log(valueInNumber);//0
 
-// null = 0
-// undefined = NaN
-// boolean = true -> 1
+// let score = undefined
+// console.log(typeof score); // undefined
 
-// "33"=>33
-//"33abc"=> Not a Number
-//true => 1; false =>0
+// let valueInNumber = Number(score)
+// console.log(typeof valueInNumber);//number
+// console.log(valueInNumber);//Nan
+
+//"33" => 33
+//"33abc" => Nan
+// true => 1 and false = 0
 
 let isLoggedIn = 1
-let booleanIsLoggedIn = Boolean(isLoggedIn)
-// console.log(booleanIsLoggedIn);
+let booleanisLoggedin = Boolean(isLoggedIn)
+// console.log(booleanisLoggedin);
 
-// "" => false in case of empty string 
-// name => "Aniket" => give true in isLoggedIn 
-// 1 => true ; 0 => false 
+/*
+Empty -> false
+Name -> true
+*/
 
- let someNumber = 33
-  let stringNumber = String(someNumber)
-//   console.log(stringNumber);
-//   console.log(typeof stringNumber);
+let someNumber = 3
+let stringNumber = String(someNumber)
+// console.log(stringNumber);
+// console.log(typeof stringNumber);
 
-// ************** Operations ****************
- let value = 3
- let negValue = - value 
- console.log(negValue);
+// ***************** Operations *************************
+let value = 3
+let negvalue = -value
+console.log(negvalue);
 
-let str1 = "Hello"
-let str2 = " Aniket"
+let str1 = "hello"
+let str2 = " ANiket"
 let str3 = str1 + str2
-console.log(str3);
 
 console.log("1" + 2);
-console.log((1+"2"));
-console.log("1"+"2");
-console.log("1"+2+2);// If string first , then everything will be treated as string 
-console.log(1+2+"2");// if string is at last then everything is calculted and then operated with string at last
-
-console.log((3+4)*5%3);
-
-console.log(+true);
-console.log(+"");
-
-let num1,num2,num3
-num1 = num2 = num3 = 2+2
-
-let gameCounter = 100
-gameCounter++;
-console.log(gameCounter);
+console.log("1"+2+2);//122
+console.log(1+2+"2");//32
